@@ -22,16 +22,16 @@ android {
 
     signingConfigs {
         release {
-            storeFile file("../key.jks")
-            keyAlias 'ang'
-            keyPassword '123456'
-            storePassword '123456'
+            storeFile file("../liuniu61_1.jks")
+            keyAlias 'liuniu'
+            keyPassword 'oyqm150022'
+            storePassword 'oyqm150022'
         }
         debug {
-            storeFile file("../key.jks")
-            keyAlias 'ang'
-            keyPassword '123456'
-            storePassword '123456'
+            storeFile file("../liuniu61_1.jks")
+            keyAlias 'liuniu'
+            keyPassword 'oyqm150022'
+            storePassword 'oyqm150022'
         }
     }
 

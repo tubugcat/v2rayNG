@@ -315,14 +315,14 @@ object Utils {
         if (AngConfigManager.genStoreV2rayConfig(-1)) {
             val configContent = AngConfigManager.currGeneratedV2rayConfig()
             val configType = AngConfigManager.currConfigType()
-            if (configType == AppConfig.EConfigType.Custom) {
-                try {
-                    Libv2ray.testConfig(configContent)
-                } catch (e: Exception) {
-                    context.toast(e.toString())
-                    return false
-                }
-            }
+//            if (configType == AppConfig.EConfigType.Custom) {
+//                try {
+//                    Libv2ray.testConfig(configContent)
+//                } catch (e: Exception) {
+//                    context.toast(e.toString())
+//                    return false
+//                }
+//            }
             V2RayVpnService.startV2Ray(context)
             return true
         } else {
